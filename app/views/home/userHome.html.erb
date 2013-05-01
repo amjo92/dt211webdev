@@ -1,0 +1,31 @@
+<well>Welcome <%= current_user.email %></well>
+</br> </br>
+<div id="add">
+<%= link_to "Add A New Activity", new_path %> </div>
+</br> </br>
+
+<table>
+	<tr>
+			<th>Title</th>
+			<th>Date</th>
+			<th>Description</th>
+			<th>Time</th>
+			<th>Location</th>
+			<th>Added on</th>
+			<th>Created By</th>
+	</tr>
+
+	<% @adventures.each do |adventures| %>
+	<tr>
+		<td><%= adventures.title %></td>
+		<td><%= adventures.Adate %></td>
+		<td><%= adventures.desc %></td>
+		<td><%= adventures.time %></td>
+		<td><%= adventures.location%></td>
+		<td><%= adventures.created_at %></td>
+		<td><%= adventures.created_by %></td>
+
+	</tr>
+	<% end %>
+</table>
+

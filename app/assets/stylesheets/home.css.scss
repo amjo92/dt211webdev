@@ -1,0 +1,56 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+hi {
+	color:white; 
+	font-size:40pt; 
+}
+
+well {
+	color:white; 
+	font-size:30pt; 
+}
+
+log {
+	color:white; 
+	font-size:30pt; 
+}
+
+#account {
+	text-align:left;
+}
+
+#add {
+	font-size:20pt; 
+}
+
+#logout {
+	text-align:right;
+}
+
+#container {
+	margin:0 auto;
+	position:relative; /* puts container in front of distance */
+	text-align:left;
+	min-height:25em;
+	width:45em;
+	clear:left;
+	background-image: linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -o-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -moz-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -ms-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.41, rgb(25,198,202)),
+		color-stop(0.79, rgb(53,238,243))
+		);
+	box-shadow: 7px 7px 3px #888;	}
+
+#body {
+	padding-top:10px;
+	text-align:center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+<div id="user_nav">
+  <% if current_user %>
+   </br> Logged in as <%= current_user.email %>. </br>
+    <div id="account">
+    <%= link_to "Home", root_url %> </div>
+    <%= link_to "My Account ", home_path(@myaccount) %> </div>
+ 
+    <div id="logout">
+     <%= link_to "Log out", log_out_path %> </div>
+
+  <% else %>
+    <%= link_to "Log in", log_in_path %> or
+    <%= link_to "Sign up", sign_up_path %>
+    
+  <% end %>
+  <% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+</div>
+
+
+</header>
+
+<head>
+  <title>Aventure Website</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <div id = "body">
+<%= yield %>
+</div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,38 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#user_nav {
+	text-align:right;
+	margin:0 auto;
+	position:relative; /* puts container in front of distance */
+	float:right;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 20px;
+	box-shadow: 5px 5px 5px #888;
+	font-family: Calibri Bold;
+	font-size: 15px;
+	background-image: linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -o-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -moz-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -ms-linear-gradient(left bottom, rgb(25,198,202) 41%, rgb(53,238,243) 79%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.41, rgb(25,198,202)),
+		color-stop(0.79, rgb(53,238,243))
+		);
+}

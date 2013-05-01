@@ -1,0 +1,22 @@
+
+<h1>Add an Adventure</h1>
+<%= form_tag :action => 'create' do %>
+
+	<%= label_tag(:title, "Title") %>
+	<%= text_field_tag(:title) %></br>
+
+	<%= label_tag(:Adate, "Date") %>
+	<%= text_field_tag(:Adate) %></br>
+
+	<%= label_tag(:desc, "Description") %>
+	<%= text_area_tag(:desc) %></br>
+
+	<%= label_tag(:location, "Location") %>
+	<%= text_field_tag(:location) %></br>
+
+	<%= label_tag(:time, "Time") %>
+	<%= text_field_tag(:time) %></br>
+
+
+	<%= submit_tag ("Add") %>
+<% end %>
